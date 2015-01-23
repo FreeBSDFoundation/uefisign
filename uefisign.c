@@ -388,6 +388,7 @@ main(int argc, char **argv)
 
 	inpath = argv[0];
 
+	OPENSSL_config(NULL);
 	ERR_load_crypto_strings();
 	OpenSSL_add_all_algorithms();
 
